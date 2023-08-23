@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scraped Job Results</title>
+</head>
+<body>
+    <h1>Scraped Job Listings</h1>
+    <ul>
+        {% for job in job_results %}
+        <li>
+            <h2>{{ job.title }}</h2>
+            <p>Company: {{ job.company }}</p>
+            <p>Location: {{ job.location }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
